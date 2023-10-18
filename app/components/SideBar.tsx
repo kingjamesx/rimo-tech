@@ -1,6 +1,9 @@
 import Image from "next/image"
 import Logo from '../assets/icons/wopka.png'
 import Podcast from '../assets/icons/podcast.svg'
+import Love from '../assets/icons/love.svg'
+import Menu from '../assets/icons/menu.svg'
+import Add from '../assets/icons/cross.svg'
 const SideBar = () => {
     const sideItems=[
         {name:'Discover',image:Podcast},
@@ -10,7 +13,6 @@ const SideBar = () => {
         {name:'Your Library',image:Podcast},
         {name:'Your playlist',image:Podcast},
         {name:'Recently played',image:Podcast},
-        {name:'Discover',image:Podcast},
         {name:'Subscription & Hosts',image:Podcast},
 
     ]
@@ -31,8 +33,14 @@ const SideBar = () => {
                         <p>{item.name}</p>
                     </li>)
                 }else{
-                    return(<li key={item.name}>
+                    return(<li key={item.name} className="flex flex-col gap-[4px] px-[14px] cursor-pointer ">
                      <p>{item.name}</p>
+                     <span className="flex justify-between max-w-[100px]">
+                     <Image src={Love} alt='love'/>
+                     <Image src={Menu} alt='menu' />
+                     <Image src={Add} alt='add' />
+
+                     </span>
                     </li>)
                 }
             })}

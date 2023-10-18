@@ -7,7 +7,7 @@ const Episode = () => {
     return (
         <div className="flex gap-[27px] mt-[58px] pb-10">
             <main className="basis-[70%] max-h-[632px] overflow-y-auto">
-                <div className="flex justify-between">
+                <div className="flex justify-between pr-5">
                     <span className="flex items-start gap-[5px]">
                         <Image src={Podcast} alt='podcast' className="mt-2" />
                         <span>
@@ -37,7 +37,7 @@ const Episode = () => {
                 </div>
                 <div className='my-custom-bg-class h-[447px] flex flex-col items-center justify-center px-[32px] text-[white]'>
 
-                    <p className="text-[24px] font-bold">Jump back in to enjoy!</p>
+                    <p className="text-[24px] font-bold text-center">Jump back in to enjoy!</p>
                     <p className="text-[18px] font-medium text-center"> Join other publishers and listeners on Wokpa</p>
                     <span className="flex gap-[11px] mt-[28px]">
                         <button className='text-[#fff] rounded-[12px] bg-teal-400 py-[11px] px-[20px]'>SIGN UP</button>

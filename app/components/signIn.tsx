@@ -12,13 +12,13 @@ const SignIn = () => {
   });
 
   // Function to handle form input changes
-  const handleInputChange = (e:any) => {
+  const handleInputChange = (e:React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
   // Function to handle form submission
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e:React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     // You can handle the form submission logic here
     console.log("Form Data:", formData);
@@ -33,7 +33,7 @@ const SignIn = () => {
         password: "",
       });
     } catch (error) {
-      toast.error('erro');
+      toast.error('error');
     }
   };
 

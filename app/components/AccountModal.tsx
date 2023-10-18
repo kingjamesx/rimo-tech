@@ -5,9 +5,19 @@ import Image from "next/image";
 import Acc from "../assets/images/join.png";
 import close from "../assets/icons/close.svg";
 import { useState } from "react";
+import { useSelector,useDispatch} from "react-redux";
+import { closeModal } from "../store/modal";
 const AccountModal = () => {
+  type RootState = {
+    modalReducer: {
+      value: boolean;
+    };
+
+  };
   const [signUp, setSignUp] = useState(true);
-  const [closeModal, setCloseModal] = useState(false);
+  const selector=useSelector((state:RootState)=>state.modalReducer.value) 
+  const dispatch=useDispatch()
+  
   const login = () => {
     setSignUp(false);
   };
@@ -15,14 +25,13 @@ const AccountModal = () => {
     setSignUp(true);
   };
   const handleClose = () => {
-    setCloseModal(true);
-    console.log("hey");
+    dispatch(closeModal())
   };
   return (
-  
+   
     <div
       className={`absolute w-[1003px] bg-[#050505] text-[white] rounded-[12px] top-2   ${
-        closeModal ? "hidden" : ""
+        !selector ? "hidden" : ""
       }`}
     >
       <div
