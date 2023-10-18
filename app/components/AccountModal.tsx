@@ -2,7 +2,7 @@
 import SignIn from "./signIn";
 import SignUp from "./SignUp";
 import Image from "next/image";
-import Acc from "../assets/images/Component 2.png";
+import Acc from "../assets/images/join.png";
 import close from "../assets/icons/close.svg";
 import { useState } from "react";
 const AccountModal = () => {
@@ -21,20 +21,20 @@ const AccountModal = () => {
   return (
   
     <div
-      className={`absolute w-[70%] bg-[#050505] text-[white] rounded-[12px] top-2   ${
+      className={`absolute w-[1003px] bg-[#050505] text-[white] rounded-[12px] top-2   ${
         closeModal ? "hidden" : ""
       }`}
     >
       <div
-        className="flex items-end justify-end py-4 px-4"
+        className="flex items-end justify-end py-4 px-4 "
         onClick={handleClose}
       >
         <span className=" bg-[#333] rounded-full p-2">
           <Image src={close} alt="close" />
         </span>
       </div>
-      <section className="flex items-center justify-center gap-[100px] ">
-        <div className="basis-[40%] pb-10">
+      <section className="flex items-center justify-center gap-[70px] ">
+        <div className="basis-[40%] pb-10 ">
           <p className="text-center text-[24px] font-bold">
             {signUp ? "Create an account" : "Welcome Back"}
           </p>
@@ -50,7 +50,7 @@ const AccountModal = () => {
             </p>
           )}
         </div>
-        <div className="basis-[30%]">
+        <div className="basis-[40%] ">
           <Image src={Acc} alt="create account" />
           <p className="font-bold text-[26px] text-[#7B61FF] text-center">
             Join a community of podcast lovers and creators
