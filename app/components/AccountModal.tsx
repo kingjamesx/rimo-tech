@@ -19,8 +19,9 @@ const AccountModal = () => {
     console.log("hey");
   };
   return (
+  
     <div
-      className={`absolute w-[70%] bg-[#050505] text-[white] rounded-[12px] ${
+      className={`absolute w-[70%] bg-[#050505] text-[white] rounded-[12px] top-2   ${
         closeModal ? "hidden" : ""
       }`}
     >

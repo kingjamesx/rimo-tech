@@ -20,12 +20,12 @@ export default function RootLayout({
        <body>
         
        
-      <main className='flex bg-[#212121]'>
-        <div className='basis-[15%]'>
+      <main className='flex justify-between bg-[#212121] max-w-[1500px] mx-auto '>
+        <div className='w-[232px] '>
         <SideBar/> 
 
         </div>
-      <section className='basis-[85%]'>
+      <section className='w-[calc(100%-232px)]'>
       <Nav/>
       <div className={inter.className}>{children}</div>
       </section>

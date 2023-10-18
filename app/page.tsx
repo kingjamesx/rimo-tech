@@ -10,9 +10,12 @@ import PodcastCard from './components/PodcastCard'
 
 export default function Home() {
   return (
-    <main>
+    <main className='px-[27px] relative'>
       <ToastContainer />
+      <div className='flex items-center justify-center '>
       <AccountModal/>
+      </div>
+      
       <div className='flex gap-[4px] items-center mt-[34px]'>
         <Image src={Star} alt='star'/>
         <p className='text-[28px] font-bold text-[white]'>Pick of the week</p>

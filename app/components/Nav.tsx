@@ -2,7 +2,7 @@ import Search from "../assets/icons/search.svg";
 import Image from "next/image";
 const Nav = () => {
   return (
-    <div className="w-full bg-gray-800 shadow-md py-[17px] px-[27px] ">
+    <div className="w-full bg-gray-800 shadow-md py-[17px] px-[27px] sticky top-0 left-0  z-[99]">
       <section className="flex justify-between items-center">
         <div className="flex justify-between rounded-lg border border-gray-700 p-1.5 bg-gray-100 h-[46px] w-[482px] px-[16px]">
           <input

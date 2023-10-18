@@ -21,7 +21,7 @@ const SideBar = () => {
 
     ]
   return (
-    <div className=" w-[232px] h-[100%] fixed bg-[#303030]">
+    <div className=" w-[232px] h-[100%] fixed bg-[#303030] z-[999] overflow-auto pb-5">
         <Image src={Logo} alt='logo'/>
         <ul className="text-[white] text-bold flex flex-col gap-[24px]">
             {sideItems.map((item,index)=>{
