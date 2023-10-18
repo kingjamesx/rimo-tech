@@ -41,11 +41,11 @@ const AccountModal = () => {
 
           {signUp ? (
             <p className="text-center font-bold mt-2">
-              Already have an account? <button onClick={login}>Log in</button>{" "}
+              Already have an account? <button onClick={login}>Log in</button>
             </p>
           ) : (
             <p className="text-center font-bold mt-2">
-              Don't have an account? <button onClick={create}>Sign Up</button>
+              Dont have an account? <button onClick={create}>Sign Up</button>
             </p>
           )}
         </div>

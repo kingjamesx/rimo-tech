@@ -13,13 +13,13 @@ const SignUp = () => {
   });
 
   // Function to handle form input changes
-  const handleInputChange = (e) => {
+  const handleInputChange = (e:any) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
   // Function to handle form submission
-  const handleSubmit = async(e) => {
+  const handleSubmit = async(e:any) => {
     e.preventDefault();
     // You can handle the form submission logic here
     console.log('Form Data:', formData);
@@ -33,7 +33,7 @@ const SignUp = () => {
             password: '',
           })
       } catch (error) {
-        toast.error(error.message);
+        toast.error('error');
       }
     
 
